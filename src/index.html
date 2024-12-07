@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="en" class="text-[clamp(12px,_2vw,_16px)]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFFILIATEHUB</title>
+    <!-- icons Fontawesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- icons Phosphor CDN link -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Tailwindcss Output file Link -->
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="font-body bg-[#f5f5fa]">
+    <!-- Header Start -->
+    <header class="bg-[linear-gradient(180deg,_#121013_77%,_#f5f5fa_77%)]">
+      <!-- Navbar Start -->
+      <nav
+        class="flex items-center w-full py-3 pt-6 px-4 min-h-[133px] border-b-4 border-[#6f25af]"
+      >
+        <div class="relative container">
+          <div class="w-full mx-auto flex flex-wrap h-full items-center gap-4">
+            <a
+              href="#"
+              class="text-white text-[1.75rem] font-extrabold leading-[1.75rem]"
+            >
+              AFFILIATEHUB
+            </a>
+            <div
+              id="collapseMenu"
+              class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50"
+            >
+              <button
+                id="toggleClose"
+                class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-black w-9 h-9 flex items-center justify-center border"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3 h-3 fill-black"
+                  viewBox="0 0 32091 32091"
+                >
+                  <path
+                    d="M30.391 31883a30.37 30.37 0 0 1-216-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M287.9 31883a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-95 20.055 12.143 9.146c11.369-9.736 28.136-9.736 3904 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+              </button>
+              <ul
+                class="lg:flex lg:ml-10 lg:gap-x-6 max-lg:space-y-3 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+              >
+                <li class="max-lg:border-b max-lg:pb-4 px-2 lg:hidden">
+                  <a href="#"> </a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-2">
+                  <a
+                    href="#"
+                    class="text-base hover:text-white text-white block transition-all"
+                    >Menu1</a
+                  >
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-2">
+                  <a
+                    href="#"
+                    class="text-base hover:text-white text-white block transition-all"
+                    >Menu2
+                  </a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-2">
+                  <a
+                    href="#"
+                    class="text-base hover:text-white text-white block transition-all"
+                    >Menu3
+                  </a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-2">
+                  <a
+                    href="#"
+                    class="text-base hover:text-white text-white block transition-all"
+                    >Menu4
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex ml-auto">
+              <button class="text-white">
+                <svg
+                  class="w-6 h-6 text-white dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3-3M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </button>
+              <button id="toggleOpen" class="lg:hidden ml-4">
+                <svg
+                  class="w-8 h-8"
+                  fill="#000"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Landing Area Start -->
+      <section class="landingArea">
+        <div class="container">
+          <div class="cram pt-4 pb-6">
+            <span class="text-[1rem] text-white font-normal"
+              >Home <i class="fa-solid fa-chevron-right"></i> Business &
+              Services</span
+            >
+          </div>
+          <h1 class="text-[3rem] font-extrabold leading-[3.3rem] text-white">
+            Top 10 Best VPN Services November 2024
+          </h1>
+          <p class="text-[1.25rem] text-white font-normal">
+            Surf the web safely & anonymously using a top VPN from our list of
+            recommended brands.
+          </p>
+          <ul class="py-4">
+            <li
+              class="text-[1.25rem] text-white flex gap-3 justify-start items-center"
+            >
+              <i class="fa-solid fa-check text-violet-500"></i>
+              <span class="font-light text-gray-100"
+                >100% privacy and anonymity</span
+              >
+            </li>
+            <li
+              class="text-[1.25rem] text-white flex gap-3 justify-start items-center"
+            >
+              <i class="fa-solid fa-check text-violet-500"></i>
+              <span class="font-light text-gray-100"
+                >Fast servers for users worldwide</span
+              >
+            </li>
+            <li
+              class="text-[1.25rem] text-white flex gap-3 justify-start items-center"
+            >
+              <i class="fa-solid fa-check text-violet-500"></i>
+              <span class="font-light text-gray-100"
+                >Tested with popular devices & services</span
+              >
+            </li>
+            <li
+              class="text-[1.25rem] text-white flex gap-3 justify-start items-center"
+            >
+              <i class="fa-solid fa-check text-violet-500"></i>
+              <span class="font-light text-gray-100"
+                >Best deals & money back guarantees</span
+              >
+            </li>
+          </ul>
+          <div class="flex flex-wrap justify-center items-stretch gap-5">
+            <div class="flex-[1_1_250px]">
+              <div
+                class="supCard h-full rounded-lg overflow-hidden bg-gray-100 shadow-xl"
+              >
+                <div class="cardHeader bg-gray-200 text-center py-5 w-full">
+                  <h4
+                    class="text-black font-bold text-[.875rem] leading-[.9625rem]"
+                  >
+                    BEST CUSTOMER SUPPORT
+                  </h4>
+                </div>
+                <div class="cardBody py-6 px-6 text-center">
+                  <div class="logoImage w-fit mx-auto">
+                    <img
+                      src="./images/image1.png"
+                      alt=""
+                      class="h-[66px] w-[140px] object-contain"
+                    />
+                  </div>
+                  <div class="cardTitle mt-5 mb-4 px-4">
+                    <h3 class="text-[1rem] text-black font-bold">
+                      Get INSTANT 200% deposit bonus up-to 10ETH
+                    </h3>
+                  </div>
+                  <div class="cardList mb-10">
+                    <ul class="pt-4 pb-6">
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Fully anonymous betting at this licensed</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Web3 influencers trust this site</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >High roller NFTs and lucrative 10 ETH</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cardBtn">
+                    <a
+                      href="#"
+                      class="inline-block font-semibold text-[1.25rem] text-white bg-green-600 rounded-[100px] py-4 w-full"
+                      >Play Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-[1_1_250px]">
+              <div
+                class="supCard h-full rounded-lg overflow-hidden bg-gray-100 shadow-xl"
+              >
+                <div class="cardHeader bg-gray-200 text-center py-5 w-full">
+                  <h4
+                    class="text-black font-bold text-[.875rem] leading-[.9625rem]"
+                  >
+                    BEST CUSTOMER SUPPORT
+                  </h4>
+                </div>
+                <div class="cardBody py-6 px-6 text-center">
+                  <div class="logoImage w-fit mx-auto">
+                    <img
+                      src="./images/image1.2.png"
+                      alt="image1.2"
+                      class="h-[66px] w-[140px] object-contain"
+                    />
+                  </div>
+                  <div class="cardTitle mt-5 mb-4 px-4">
+                    <h3 class="text-[1rem] text-black font-bold">
+                      Deposit Match Bonus Up To $3,750
+                    </h3>
+                  </div>
+                  <div class="cardList mb-10">
+                    <ul class="pt-4 pb-6">
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >100% match bonus up to $1,000</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >75% bonus on first crypto deposit</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Earn reward points on your daily choice</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cardBtn">
+                    <a
+                      href="#"
+                      class="inline-block font-semibold text-[1.25rem] text-white bg-green-600 rounded-[100px] py-4 w-full"
+                      >Play Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-[1_1_250px]">
+              <div
+                class="supCard h-full rounded-lg overflow-hidden bg-gray-100 shadow-xl"
+              >
+                <div class="cardHeader bg-gray-200 text-center py-5 w-full">
+                  <h4
+                    class="text-black font-bold text-[.875rem] leading-[.9625rem]"
+                  >
+                    BEST CUSTOMER SUPPORT
+                  </h4>
+                </div>
+                <div class="cardBody py-6 px-6 text-center">
+                  <div class="logoImage w-fit mx-auto">
+                    <img
+                      src="./images/image1.3.png"
+                      alt="image1.3"
+                      class="h-[66px] w-[140px] object-contain"
+                    />
+                  </div>
+                  <div class="cardTitle mt-5 mb-4 px-4">
+                    <h3 class="text-[1rem] text-black font-bold">
+                      200% Welcome Bonus Up to €25,000 + 50 Free Spins
+                    </h3>
+                  </div>
+                  <div class="cardList mb-10">
+                    <ul class="pt-4 pb-6">
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >100% match bonus up to $1,000</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >75% bonus on first crypto deposit</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Earn reward points on your daily choice</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cardBtn">
+                    <a
+                      href="#"
+                      class="inline-block font-semibold text-[1.25rem] text-white bg-green-600 rounded-[100px] py-4 w-full"
+                      >Play Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-[1_1_250px]">
+              <div
+                class="supCard h-full rounded-lg overflow-hidden bg-gray-100 shadow-xl"
+              >
+                <div class="cardHeader bg-gray-200 text-center py-5 w-full">
+                  <h4
+                    class="text-black font-bold text-[.875rem] leading-[.9625rem]"
+                  >
+                    200% Bonus up to 1BTC + 50 Free Spins
+                  </h4>
+                </div>
+                <div class="cardBody py-6 px-6 text-center">
+                  <div class="logoImage w-fit mx-auto">
+                    <img
+                      src="./images/image1.4.png"
+                      alt="image1.4"
+                      class="h-[66px] w-[140px] object-contain"
+                    />
+                  </div>
+                  <div class="cardTitle mt-5 mb-4 px-4">
+                    <h3 class="text-[1rem] text-black font-bold">
+                      World's First Licensed Telegram Casino
+                    </h3>
+                  </div>
+                  <div class="cardList mb-10">
+                    <ul class="pt-4 pb-6">
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Newly launched crypto casino</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Anonymous casino, instant withdrawals</span
+                        >
+                      </li>
+                      <li
+                        class="mb-3 text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                      >
+                        <i
+                          class="fa-solid fa-check text-green-500 text-[.95rem]"
+                        ></i>
+                        <span class="font-light text-gray-800"
+                          >Tested with popular devices & services</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cardBtn">
+                    <a
+                      href="#"
+                      class="inline-block font-semibold text-[1.25rem] text-white bg-green-600 rounded-[100px] py-4 w-full"
+                      >Play Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Landing Area End -->
+    </header>
+    <!-- Header End -->
+    <!-- Wild Start -->
+    <section class="wild py-10">
+      <div class="container">
+        <div class="sectionHeading">
+          <h2 class="text-[2rem] text-black font-bold">
+            1. Wild Casino - A Leading Live Casino with Over 70 Live Table Games
+            WILD
+          </h2>
+          <div
+            class="subHeading flex justify-start items-center gap-3 divide-x-2"
+          >
+            <span class="text-gray-600 pe-3 text-[1rem]"
+              >By <span class="text-green-700">Koba Molenaar</span></span
+            >
+            <span class="text-gray-600 pe-3 ps-3 text-[1rem]"
+              >Last Updated: November 28th, 2024</span
+            >
+            <span class="text-gray-600 pe-3 ps-3 text-[1rem]">13 Min Read</span>
+            <span class="text-gray-600 pe-3 ps-3 text-[1rem]"
+              >Affiliate Marketing</span
+            >
+          </div>
+        </div>
+        <div
+          class="imageDiv relative h-full w-full max-h-[478px] max-w-[1057px] my-5"
+        >
+          <img
+            src="./images/image2.png"
+            alt="image2"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          If there were authentically endorsed MrBeast online casinos, we're
+          sure Wild Casino would be one of them. This online platform focuses
+          solely on casino gaming and provides over 600 games, including slots,
+          table games, specialty games, and video poker options. But Wild Casino
+          stands out for its live dealer suite, where you can find over 73 live
+          games, 27 of which are blackjack variations.
+        </p>
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          Wild Casino features several payment options, ranging from credit
+          cards and e-wallets to cryptocurrencies like Bitcoin, Ethereum, and
+          Litecoin. If you're new to
+          <u class="decoration-violet-600">Wild Casino</u>, don't forget to sign
+          up for the generous welcome package that covers your first five
+          deposits.
+        </p>
+        <h3 class="text-[1.5rem] text-black font-bold mb-5">
+          Wild Casino bonus:
+        </h3>
+        <!-- Table Start -->
+        <div class="overflow-x-auto mb-8">
+          <table
+            class="w-full border border-collapse max-lg:flex max-lg:items-stretch"
+          >
+            <thead>
+              <tr class="max-lg:flex max-lg:flex-col">
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Bonus name
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Bonus amount
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Promo code
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Minimum deposit
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Bitcoin accepted?
+                </th>
+              </tr>
+            </thead>
+            <tbody class="max-lg:w-full">
+              <tr class="max-lg:flex max-lg:flex-col max-lg:h-full">
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  Casino Sign-up Offer
+                </td>
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  100% up to $5,000 (over five deposits)
+                </td>
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  INSIDERS
+                </td>
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  $20
+                </td>
+                <td
+                  class="border text-[1.25rem] text-center px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  <img
+                    src="./images/check.png"
+                    alt="check"
+                    class="h-26 w-26 block mx-auto"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a
+          href="#"
+          class="text-[1.25rem] w-fit mx-auto block text-white rounded-[100px] py-3 px-8 bg-[#00853c] mb-8"
+          >Visit Wild Casino</a
+        >
+      </div>
+    </section>
+    <!-- Wild End -->
+
+    <!-- MrBeast Start -->
+    <section class="mrBeast pb-7">
+      <div class="container">
+        <h2 class="text-[2rem] font-bold text-black mb-4">
+          Best Alternatives to the MrBeast Casino Apps in May
+        </h2>
+        <p class="mb-6">
+          Below, you can find a list of the 14 best MrBeast casino alternatives.
+          These <u class="decoration-violet-800">real money casino apps</u> and
+          sites are all
+          <u class="decoration-violet-800">offshore casinos</u> which makes them
+          safe to play at, and they provide an excellent selection of games and
+          promos.
+        </p>
+
+        <ol class="list">
+          <li class="text-gray-800 font-normal mb-2 text-[1.25rem]">
+            <u class="font-bold text-black decoration-violet-600"
+              >1. Wild Casino</u
+            >
+            <span>&minus;</span> Best MrBeast casino alternative with top mobile
+            gaming
+          </li>
+          <li class="text-gray-800 font-normal mb-2 text-[1.25rem]">
+            <u class="font-bold text-black decoration-violet-600"
+              >2. TG Casino</u
+            >
+            <span>&minus;</span> A leading live casino with over 70 live table
+            games
+          </li>
+          <li class="text-gray-800 font-normal mb-2 text-[1.25rem]">
+            <u class="font-bold text-black decoration-violet-600">3. Bovada</u>
+            <span>&minus;</span> Accepts the highest maximum bets on live games
+          </li>
+          <li class="text-gray-800 font-normal mb-2 text-[1.25rem]">
+            <u class="font-bold text-black decoration-violet-600"
+              >4. Lucky Block</u
+            >
+            <span>&minus;</span> Easy registration crypto casino with 4,000+
+            games
+          </li>
+          <li class="text-gray-800 font-normal mb-2 text-[1.25rem]">
+            <u class="font-bold text-black decoration-violet-600"
+              >5. Mega Dice</u
+            >
+            <span>&minus;</span> Claim One of the Most Generous Welcome Packages
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- MrBeast End -->
+
+    <section class="mrBeast">
+      <div class="container">
+        <h2 class="font-bold text-[2rem] mb-8">
+          MrBeast's Gambling Presence Online
+        </h2>
+        <div
+          class="flex p-2 pe-5 max-lg:p-6 bg-[#f8f7fc] shadow-[2px_6px_40px_0px_#0000000D] mb-6 lg:gap-14 gap-8 flex-wrap relative"
+        >
+          <div
+            class="flex lg:flex-row flex-col lg:pt-0 pt-[2.75rem] basis-[31.25rem] flex-grow-[5] items-center"
+          >
+            <img src="./images/mrb1.png" class="w-[8.0625rem]" alt="" />
+            <div class="lg:text-start text-center lg:ps-3 max-lg:mt-2">
+              <h4 class="text-[1.25rem] max-md:text-sm font-bold text-nowrap">
+                Stake Casino
+              </h4>
+              <span
+                class="block max-w-fit font-medium bg-[#EAE8F2] text-[#45474B] py-1 px-2 rounded-[.3125rem] mb-2 lg:mt-3 text-nowrap max-lg:absolute top-5 left-1/2 max-lg:-translate-x-[53%]"
+                >Welcome Deal</span
+              >
+              <h5
+                class="text-[#00853C] text-sm max-md:text-xs font-medium text-nowrap max-lg:mt-[6px]"
+              >
+                Stake Casino Review
+              </h5>
+            </div>
+            <h4 class="2xl:text-xl text-base font-medium lg:ps-8 max-lg:mt-3">
+              110% UP To $600 + 500 Free Spins
+            </h4>
+          </div>
+          <div
+            class="flex max-md:flex-col basis-[31.25rem] flex-grow-[2] items-center max-lg:items-stretch"
+          >
+            <ul class="flex flex-col gap-3 max-md:mb-[2.5rem]">
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  Stake Exclusive & Original games
+                </p>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  Impressive partners
+                </p>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  Casino and sportsbook
+                </p>
+              </li>
+            </ul>
+
+            <div class="text-center md:ms-auto max-md:w-full">
+              <a
+                href="#"
+                class="text-sm max-md:text-xs font-medium w-fit max-md:w-full justify-center mx-auto text-white rounded-[100px] py-3 px-4 bg-[#00853C] mb-2 flex items-center gap-1"
+                >Visit Site
+                <i class="fa-solid fa-arrow-right text-[.625rem]"></i
+              ></a>
+              <p
+                class="text-[.625rem] text-[#00853C] font-medium max-md:text-xs"
+              >
+                T&C Apply
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex p-2 pe-5 max-lg:p-6 bg-[#f8f7fc] shadow-[2px_6px_40px_0px_#0000000D] mb-6 lg:gap-14 gap-8 flex-wrap relative"
+        >
+          <div
+            class="flex lg:flex-row flex-col lg:pt-0 pt-[2.75rem] basis-[31.25rem] flex-grow-[5] items-center"
+          >
+            <img src="./images/mrb2.png" class="w-[8.0625rem]" alt="" />
+            <div class="lg:text-start text-center lg:ps-3 max-lg:mt-2">
+              <h4 class="text-[1.25rem] max-md:text-sm font-bold text-nowrap">
+                Starda Casino
+              </h4>
+              <span
+                class="block max-w-fit font-medium bg-[#EAE8F2] text-[#45474B] py-1 px-2 rounded-[.3125rem] mb-2 lg:mt-3 text-nowrap max-lg:absolute top-5 left-1/2 max-lg:-translate-x-[53%]"
+                >Welcome Deal</span
+              >
+              <h5
+                class="text-[#00853C] text-sm max-md:text-xs font-medium text-nowrap max-lg:mt-[6px]"
+              >
+                Stake Casino Review
+              </h5>
+            </div>
+            <h4 class="2xl:text-xl text-base font-medium lg:ps-8 max-lg:mt-3">
+              110% UP To $600 + 500 Free Spins
+            </h4>
+          </div>
+          <div
+            class="flex max-md:flex-col basis-[31.25rem] flex-grow-[2] items-center max-lg:items-stretch"
+          >
+            <ul class="flex flex-col gap-3 max-md:mb-[2.5rem]">
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  500 Welcome Free Spins
+                </p>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  High monthly withdrawal limits
+                </p>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  Over 5,000 games
+                </p>
+              </li>
+            </ul>
+
+            <div class="text-center md:ms-auto max-md:w-full">
+              <a
+                href="#"
+                class="text-sm max-md:text-xs font-medium w-fit max-md:w-full justify-center mx-auto text-white rounded-[100px] py-3 px-4 bg-[#00853C] mb-2 flex items-center gap-1"
+                >Visit Site
+                <i class="fa-solid fa-arrow-right text-[.625rem]"></i
+              ></a>
+              <p
+                class="text-[.625rem] text-[#00853C] font-medium max-md:text-xs"
+              >
+                T&C Apply
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex p-2 pe-5 max-lg:p-6 bg-[#f8f7fc] shadow-[2px_6px_40px_0px_#0000000D] mb-6 lg:gap-14 gap-8 flex-wrap relative"
+        >
+          <div
+            class="flex lg:flex-row flex-col lg:pt-0 pt-[2.75rem] basis-[31.25rem] flex-grow-[5] items-center"
+          >
+            <img src="./images/mrb3.png" class="w-[8.0625rem]" alt="" />
+            <div class="lg:text-start text-center lg:ps-3 max-lg:mt-2">
+              <h4 class="text-[1.25rem] max-md:text-sm font-bold text-nowrap">
+                Fresh Casino
+              </h4>
+              <span
+                class="block max-w-fit font-medium bg-[#EAE8F2] text-[#45474B] py-1 px-2 rounded-[.3125rem] mb-2 lg:mt-3 text-nowrap max-lg:absolute top-5 left-1/2 max-lg:-translate-x-[53%]"
+                >Welcome Deal</span
+              >
+              <h5
+                class="text-[#00853C] text-sm max-md:text-xs font-medium text-nowrap max-lg:mt-[6px]"
+              >
+                Stake Casino Review
+              </h5>
+            </div>
+            <h4 class="2xl:text-xl text-base font-medium lg:ps-8 max-lg:mt-3">
+              Up to €1,500 + 500 Free Spins
+            </h4>
+          </div>
+          <div
+            class="flex max-md:flex-col basis-[31.25rem] flex-grow-[2] items-center max-lg:items-stretch"
+          >
+            <ul class="flex flex-col gap-3 max-md:mb-[2.5rem]">
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  Up to 500 welcome free spins
+                </p>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  Great VIP program
+                </p>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="w-[.9375rem] min-w-[.9375rem] h-[.9375rem] flex items-center justify-center rounded-full bg-[#D4EDD7] text-[#0C961C] text-[.4375rem]"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p class="mb-0 ps-[.375rem] text-sm text-[#45474B]">
+                  High withdrawal limits
+                </p>
+              </li>
+            </ul>
+
+            <div class="text-center md:ms-auto max-md:w-full">
+              <a
+                href="#"
+                class="text-sm max-md:text-xs font-medium w-fit max-md:w-full justify-center mx-auto text-white rounded-[100px] py-3 px-4 bg-[#00853C] mb-2 flex items-center gap-1"
+                >Visit Site
+                <i class="fa-solid fa-arrow-right text-[.625rem]"></i
+              ></a>
+              <p
+                class="text-[.625rem] text-[#00853C] font-medium max-md:text-xs"
+              >
+                T&C Apply
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          Jimmy Donaldson, better known as MrBeast, is one of the biggest
+          YouTube stars, captivating the attention of the masses across the
+          globe. In fact, he has been so successful in his online streaming that
+          MrBeast has a net worth of $500 million, which is only set to grow
+          going forward.
+        </p>
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          However, online
+          <u class="decoration-violet-700">casino streamers</u> have started
+          with murmurs of a MrBeast online casino launching soon. But the casino
+          industry isn't taking much notice. Many players perceive this chatter
+          as poorly constructed marketing gimmicks. These advertisements, siting
+          "endorsement" from the star, are, in all likelihood, false claims
+          piggybacking off his name and fame.
+        </p>
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          However, many online casinos provide excellent online gaming, safe
+          payment options, and generous bonuses and promotions despite having no
+          affiliation with MrBeast or his YouTube channel, with more than a
+          million subscribers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Expert Start -->
+    <section class="expert py-10">
+      <div class="container">
+        <div class="sectionHeading">
+          <h2 class="text-[2rem] text-black font-bold">
+            Expert Reviews for Top 5 MrBeast Casino Alternatives
+          </h2>
+        </div>
+
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          Below, you'll find our experts' reviews of the top five MrBeast casino
+          alternatives on our list (you can learn more about how we rate online
+          casinos here.) Despite having no affiliation with the online streamer,
+          these online casinos are all safe to use, provide high-quality games,
+          and feature some of the best bonuses and progressive jackpots.
+        </p>
+
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          If there were authentically endorsed MrBeast online casinos, we're
+          sure Wild Casino would be one of them. This online platform focuses
+          solely on casino gaming and provides over 600 games, including slots,
+          table games, specialty games, and video poker options. But Wild Casino
+          stands out for its live dealer suite, where you can find over 73 live
+          games, 27 of which are blackjack variations.
+        </p>
+
+        <p class="text-[1.25rem] font-normal text-black mb-5">
+          Wild Casino features several payment options, ranging from credit
+          cards and e-wallets to cryptocurrencies like Bitcoin, Ethereum, and
+          Litecoin. If you're new to
+          <u class="decoration-violet-600">Wild Casino</u>, don't forget to sign
+          up for the generous welcome package that covers your first five
+          deposits.
+        </p>
+        <h3 class="text-[1.5rem] text-black font-bold mb-5">
+          Wild Casino bonus:
+        </h3>
+        <!-- Table Start -->
+        <div class="overflow-x-auto mb-8">
+          <table
+            class="w-full border border-collapse max-lg:flex max-lg:items-stretch"
+          >
+            <thead>
+              <tr class="max-lg:flex max-lg:flex-col">
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Bonus name
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Bonus amount
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Promo code
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Minimum deposit
+                </th>
+                <th
+                  class="border text-[1.25rem] text-start px-4 py-5 text-nowrap"
+                >
+                  Bitcoin accepted?
+                </th>
+              </tr>
+            </thead>
+            <tbody class="max-lg:w-full">
+              <tr class="max-lg:flex max-lg:flex-col max-lg:h-full">
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  Casino Sign-up Offer
+                </td>
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  100% up to $5,000 (over five deposits)
+                </td>
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  INSIDERS
+                </td>
+                <td
+                  class="border text-[1.25rem] text-start px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  $20
+                </td>
+                <td
+                  class="border text-[1.25rem] text-center px-4 py-5 bg-[#eeedf2] text-nowrap"
+                >
+                  <img
+                    src="./images/check.png"
+                    alt="check"
+                    class="h-26 w-26 block mx-auto"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="flex my-6 gap-5 flex-wrap justify-center items-stretch">
+          <div class="flex-[1_1_300px] w-full">
+            <div class="title_card px-4 py-6 w-full bg-[#eeedf2]">
+              <span class="text-[1.25rem] text-black font-bold">Pors:</span>
+              <i class="fa-solid fa-circle-check text-green-700"></i>
+            </div>
+
+            <div class="cardList">
+              <ul class="pt-4 pb-6">
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Features 73 live casino games</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Has 15 different payment methods</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Exciting welcome package</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Provides 600+ quality games</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Best deals & money back guarantees</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] w-full">
+            <div class="title_card px-4 py-6 w-full bg-[#eeedf2]">
+              <span class="text-[1.25rem] text-black font-bold">Cons:</span>
+              <i class="fa-solid fa-circle-xmark text-green-700"></i>
+            </div>
+            <div class="cardList">
+              <ul class="pt-4 pb-6">
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-xmark text-gray-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >High minimum deposit requirements</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-xmark text-gray-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >No other gambling options provided</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#"
+          class="text-[1.25rem] w-fit mx-auto block text-white rounded-[100px] py-3 px-8 bg-[#00853c] mb-8"
+          >Visit Wild Casino</a
+        >
+      </div>
+    </section>
+    <!-- Expert End -->
+
+    <!-- Antivirus Start -->
+    <section class="antivirus pb-10">
+      <div class="container">
+        <div class="sectionHeading">
+          <h2 class="text-[2rem] text-black font-bold">
+            Top-rated antivirus programs of 2024
+          </h2>
+        </div>
+
+        <div class="listRated">
+          <ol class="list">
+            <li
+              class="text-gray-800 font-normal text-[1.25rem] flex gap-5 justify-start items-center rounded-xl overflow-hidden border-2 border-green-700 mb-5"
+            >
+              <div
+                class="num bg-green-700 w-[84px] h-[75px] flex justify-center items-center"
+              >
+                <span class="text-[2.5rem] text-white">1</span>
+              </div>
+
+              <h4 class="text-black text-[1.5rem]">
+                <u class="decoration-green-600 font-medium text-green-700"
+                  >Norton 360 Antivirus</u
+                >
+
+                - the best overall antivirus software in 2024
+              </h4>
+            </li>
+            <li
+              class="text-gray-800 font-normal text-[1.25rem] flex gap-5 justify-start items-center rounded-xl overflow-hidden border-2 border-green-700 mb-5"
+            >
+              <div
+                class="num bg-green-700 w-[84px] h-[75px] flex justify-center items-center"
+              >
+                <span class="text-[2.5rem] text-white">2</span>
+              </div>
+
+              <h4 class="text-black text-[1.5rem]">
+                <u class="decoration-green-600 font-medium text-green-700"
+                  >TotalAV Pro Antivirus</u
+                >
+
+                - excellent antivirus for digital security
+              </h4>
+            </li>
+            <li
+              class="text-gray-800 font-normal text-[1.25rem] flex gap-5 justify-start items-center rounded-xl overflow-hidden border-2 border-green-700 mb-5"
+            >
+              <div
+                class="num bg-green-700 w-[84px] h-[75px] flex justify-center items-center"
+              >
+                <span class="text-[2.5rem] text-white">3</span>
+              </div>
+
+              <h4 class="text-black text-[1.5rem]">
+                <u class="decoration-green-600 font-medium text-green-700"
+                  >Bitdefender Antivirus Plus</u
+                >
+
+                - top cross-platform antivirus software
+              </h4>
+            </li>
+            <li
+              class="text-gray-800 font-normal text-[1.25rem] flex gap-5 justify-start items-center rounded-xl overflow-hidden border-2 border-[#9c9ea4] mb-5"
+            >
+              <div
+                class="num bg-[#9c9ea4] w-[84px] h-[75px] flex justify-center items-center"
+              >
+                <span class="text-[2.5rem] text-white">4</span>
+              </div>
+
+              <h4 class="text-black text-[1.5rem]">
+                <u class="decoration-green-600 font-medium text-green-700"
+                  >Surfshark Antivirus</u
+                >
+
+                - great lightweight antivirus bundled with VPN
+              </h4>
+            </li>
+            <li
+              class="text-gray-800 font-normal text-[1.25rem] flex gap-5 justify-start items-center rounded-xl overflow-hidden border-2 border-[#9c9ea4] mb-5"
+            >
+              <div
+                class="num bg-[#9c9ea4] w-[84px] h-[75px] flex justify-center items-center"
+              >
+                <span class="text-[2.5rem] text-white">5</span>
+              </div>
+
+              <h4 class="text-black text-[1.5rem]">
+                <u class="decoration-green-600 font-medium text-green-700"
+                  >ESET NOD32
+                </u>
+
+                - antivirus with excellent web protection features
+              </h4>
+            </li>
+          </ol>
+        </div>
+
+        <div class="subHeading mb-6">
+          <h3 class="text-[1.5rem] font-medium">
+            LIMITED OFFER:
+            <u class="text-green-700 decoration-green-700"
+              >Black Friday! Get up to 75% OFF Norton Antivirus</u
+            >
+          </h3>
+        </div>
+
+        <div
+          class="cardAdd border-2 border-green-700 rounded-xl flex flex-wrap max-xl:flex-col max-xl:pt-8 max-xl:items-stretch text-center justify-between items-center overflow-hidden gap-5"
+        >
+          <div class="image w-[201px] h-[44px] max-xl:mx-auto">
+            <img
+              src="./images/Logo-NordVPN 1.png"
+              alt="Logo-NordVPN"
+              class="h-full w-full object-contain"
+            />
+          </div>
+          <div
+            class="bg-green-700 text-white py-2 px-3 rounded-lg max-w-fit max-xl:mx-auto"
+          >
+            LIMITED TIME OFFER
+          </div>
+
+          <div class="w-fit max-xl:w-full max-xl:mx-auto">
+            <u class="text-green-700 decoration-green-700 text-[1.5rem]"
+              >Get 74% OFF + 3 months free</u
+            >
+          </div>
+
+          <div
+            class="h-[100px] w-[302px] max-xl:w-full flex justify-center items-center text-white bg-green-700 -me-1 gap-4"
+          >
+            <span class="text-[1.5rem]">Get the deal</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-stretch">
+          <div class="flex-[1_1_400px]">
+            <div class="title_card px-4 pt-6 pb-3 w-full bg-transparent">
+              <span class="text-[1.25rem] text-black font-bold">Best for</span>
+            </div>
+
+            <div class="cardList">
+              <ul class="pb-2">
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Streaming and torrenting</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Fast connection speeds</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-check text-green-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Top-class security</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-[1_1_400px]">
+            <div class="title_card px-4 pt-6 pb-3 w-full bg-transparent">
+              <span class="text-[1.25rem] text-black font-bold"
+                >Considerations</span
+              >
+            </div>
+
+            <div class="cardList">
+              <ul class="pb-2">
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-minus text-gray-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Free trial only for Android devices</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-minus text-gray-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Limited device connections (maximum 10)</span
+                  >
+                </li>
+                <li
+                  class="text-[.75rem] text-white flex gap-3 justify-start items-center text-start"
+                >
+                  <i class="fa-solid fa-minus text-gray-500 text-[.95rem]"></i>
+                  <span class="font-light text-gray-800"
+                    >Speed fluctuations on distant servers</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-12 pt-4">
+      <div class="container">
+        <div
+          class="shadow-[2px_6px_40px_0px_#0000000D] bg-[#F8F7FC] p-8 max-xl:px-5 rounded-xl flex max-xl:flex-wrap items-stretch justify-between max-xl:justify-center mb-6 gap-6"
+        >
+          <div
+            class="flex items-center justify-center basis-[18.75rem] xl:border-r border-[#BEBEC2] xl:py-8"
+          >
+            <img src="./images/vp01.png" class="w-1/2 block" alt="" />
+          </div>
+          <div class="flex-grow-[2] basis-96 lg:pe-14 max-xl:px-8">
+            <h4
+              class="text-xl max-xl:text-base max-md:text-sm font-medium leading-[1.75rem] text-[#131010] mb-7 max-xl:text-center"
+            >
+              ExpressVPN offers unbreakable online security and privacy using
+              both industry-leading and in-house-built features.
+            </h4>
+            <div class="flex flex-wrap">
+              <ul class="xl:w-1/2 w-full">
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Robust security features</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Fast connection speeds</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Includes Threat manager</span
+                  >
+                </li>
+              </ul>
+              <ul class="xl:w-1/2 w-full">
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >30-day money-back guarantee</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Detailed information</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-fit ms-auto text-center flex-grow">
+            <a
+              href="#"
+              class="bg-[#00853C] w-fit mx-auto py-[1.125rem] max-xl:py-4 font-bold px-[2.25rem] rounded-xl flex justify-center items-center gap-3 text-white text-lg max-xl:text-base whitespace-nowrap"
+              >Visit ExpressVPN <i class="fa-solid fa-angle-right"></i
+            ></a>
+            <p class="mt-9 max-xl:mt-6 text-sm font-medium text-[#45474B] mb-3">
+              Rating - 4.0/5
+            </p>
+            <div class="flex items-center justify-center gap-2">
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#9C9FA4]"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="shadow-[2px_6px_40px_0px_#0000000D] bg-[#F8F7FC] p-8 max-xl:px-5 rounded-xl flex max-xl:flex-wrap items-stretch justify-between max-xl:justify-center mb-6 gap-6"
+        >
+          <div
+            class="flex items-center justify-center basis-[18.75rem] xl:border-r border-[#BEBEC2] xl:py-8"
+          >
+            <img src="./images/vp2.png" class="w-1/2 block" alt="" />
+          </div>
+          <div class="flex-grow-[2] basis-96 lg:pe-14 max-xl:px-8">
+            <h4
+              class="text-xl max-xl:text-base max-md:text-sm font-medium leading-[1.75rem] text-[#131010] mb-7 max-xl:text-center"
+            >
+              With CyberGhost, enjoy a speedy performance, extensive security
+              features, and one of the largest server fleets in the market for a
+              very reasonable price.
+            </h4>
+            <div class="flex flex-wrap">
+              <ul class="xl:w-1/2 w-full">
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Advanced encryption</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Large server fleet</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Large server fleet</span
+                  >
+                </li>
+              </ul>
+              <ul class="xl:w-1/2 w-full">
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Detailed information</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-fit ms-auto text-center flex-grow">
+            <a
+              href="#"
+              class="bg-[#00853C] w-fit mx-auto py-[1.125rem] max-xl:py-4 font-bold px-[2.25rem] rounded-xl flex justify-center items-center gap-3 text-white text-lg max-xl:text-base whitespace-nowrap"
+              >Visit ExpressVPN <i class="fa-solid fa-angle-right"></i
+            ></a>
+            <p class="mt-9 max-xl:mt-6 text-sm font-medium text-[#45474B] mb-3">
+              Rating - 4.0/5
+            </p>
+            <div class="flex items-center justify-center gap-2">
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#9C9FA4]"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="shadow-[2px_6px_40px_0px_#0000000D] bg-[#F8F7FC] border-2 border-[#F88C2D] relative p-8 max-xl:px-5 rounded-xl flex max-xl:flex-wrap items-stretch justify-between max-xl:justify-center mb-6 gap-6 overflow-hidden"
+        >
+          <span
+            class="bg-[#F88C2D] py-2 px-4 rounded-[0_0_0.75rem_0] absolute -top-[1px] -start-[1px] font-extrabold text-xl"
+            >FASTEST VPN</span
+          >
+          <div
+            class="flex items-center justify-center basis-[18.75rem] xl:border-r border-[#BEBEC2] xl:py-8"
+          >
+            <img src="./images/vp3.png" class="w-1/2 block" alt="" />
+          </div>
+          <div class="flex-grow-[2] basis-96 lg:pe-14 max-xl:px-8">
+            <h4
+              class="text-xl max-xl:text-base max-md:text-sm font-medium leading-[1.75rem] text-[#131010] mb-7 max-xl:text-center"
+            >
+              With CyberGhost, enjoy a speedy performance, extensive security
+              features, and one of the largest server fleets in the market for a
+              very reasonable price.
+            </h4>
+            <div class="flex flex-wrap">
+              <ul class="xl:w-1/2 w-full">
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Advanced encryption</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Large server fleet</span
+                  >
+                </li>
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Large server fleet</span
+                  >
+                </li>
+              </ul>
+              <ul class="xl:w-1/2 w-full">
+                <li class="flex gap-3 items-baseline leading-6 mb-2">
+                  <i class="fa-solid fa-check text-xs flex text-[#00853C]"></i>
+                  <span class="text-sm font-medium text-[#45474B]"
+                    >Detailed information</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-fit ms-auto text-center flex-grow">
+            <a
+              href="#"
+              class="bg-[#00853C] w-fit mx-auto py-[1.125rem] max-xl:py-4 font-bold px-[2.25rem] rounded-xl flex justify-center items-center gap-3 text-white text-lg max-xl:text-base whitespace-nowrap"
+              >Visit ExpressVPN <i class="fa-solid fa-angle-right"></i
+            ></a>
+            <p class="mt-9 max-xl:mt-6 text-sm font-medium text-[#45474B] mb-3">
+              Rating - 4.0/5
+            </p>
+            <div class="flex items-center justify-center gap-2">
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#00853C]"></i>
+              <i class="fa-solid fa-star text-[#9C9FA4]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Antivirus End -->
+
+    <!-- Trending Deals Start -->
+    <section class="trending">
+      <div class="container">
+        <div class="sectionHeading mb-6">
+          <h2 class="text-[2rem] text-black font-bold text-center">
+            Trending Deals
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-5">
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >VPNs</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-6.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Antivirus</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-10.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Website Builders</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-16.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Web Hosting</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-1.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Email Marketing</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-7.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Dating</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-11.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Travel</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-17.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Casino</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-2.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Weight Loss</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-8.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Air Tickets</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-12.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Crypto</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-18.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >CBD</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-3.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Vaping</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-9.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Sports Betting
+              </span>
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-13.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Educations</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-19.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Events Tickets</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-4.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Skin Care</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-23.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Forex</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-14.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Psychics</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-20.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Online Therapy</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-5.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Mattress</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-22.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >eCommerce</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-15.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >Keto</span
+              >
+            </div>
+          </div>
+          <div class="flex-[1_1_300px] max-lg:[1_1_200px] text-nowrap">
+            <div
+              class="card shadow flex w-full h-[84px] justify-start items-center gap-3 rounded-lg bg-white px-[1.9375rem]"
+            >
+              <img src="./images/Vector-21.svg" alt="Vector" />
+              <span class="text-[#00853c] text-[1rem] lg:text-[1.5rem]"
+                >VPNs</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trending Deals End -->
+
+    <!-- Cybersecurity Start -->
+    <section class="cybersecurity py-12">
+      <div class="container">
+        <div class="sectionHeader text-center mb-6">
+          <h2 class="text-[2rem] text-black font-bold">Cybersecurity blog</h2>
+          <p class="text-[1.25rem] text-black">
+            Must-read articles on digital security
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-stretch gap-5">
+          <div class="flex-[1_1_300px]">
+            <div class="card shadow-lg bg-white rounded-lg overflow-hidden">
+              <div
+                class="imgCard max-h-[228px] w-full relative pb-[50%] overflow-hidden"
+              >
+                <img
+                  src="./images/card1.png"
+                  alt="card1"
+                  class="absolute top-0 left-0 h-full w-full object-cover"
+                />
+              </div>
+              <div class="cardBody p-5">
+                <h2
+                  class="text-wtite text-[1.75rem] font-bold text-balance mb-6 lg:pe-32"
+                >
+                  Data Breach Prevention: A Full Guide [2023]
+                </h2>
+
+                <a
+                  href="#"
+                  class="text-[#803fb9] text-[1rem] gap-4 flex justify-start items-center"
+                  ><span>Read more</span> <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-[1_1_300px]">
+            <div class="card shadow-lg bg-white rounded-lg overflow-hidden">
+              <div
+                class="imgCard max-h-[228px] w-full relative pb-[50%] overflow-hidden"
+              >
+                <img
+                  src="./images/card2.png"
+                  alt="card1"
+                  class="absolute top-0 left-0 h-full w-full object-cover"
+                />
+              </div>
+              <div class="cardBody p-5">
+                <h2
+                  class="text-wtite text-[1.75rem] font-bold text-balance mb-6 lg:pe-32"
+                >
+                  How to Protect Yourself from Identity Theft: A Complete Guide
+                  [2023]
+                </h2>
+
+                <a
+                  href="#"
+                  class="text-[#803fb9] text-[1rem] gap-4 flex justify-start items-center"
+                  ><span>Read more</span> <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-[1_1_300px]">
+            <div class="card shadow-lg bg-white rounded-lg overflow-hidden">
+              <div
+                class="imgCard max-h-[228px] w-full relative pb-[50%] overflow-hidden"
+              >
+                <img
+                  src="./images/card3.png"
+                  alt="card1"
+                  class="absolute top-0 left-0 h-full w-full object-cover"
+                />
+              </div>
+              <div class="cardBody p-5">
+                <h2
+                  class="text-wtite text-[1.75rem] font-bold text-balance mb-6 lg:pe-32"
+                >
+                  Small Business Cybersecurity Tips. The Ultimate List [2023]
+                </h2>
+
+                <a
+                  href="#"
+                  class="text-[#803fb9] text-[1rem] gap-4 flex justify-start items-center"
+                  ><span>Read more</span> <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cybersecurity End -->
+    <!-- FAQ Start -->
+    <section class="py-12">
+      <div class="container">
+        <h4 class="text-center text-[2rem] font-bold mb-8">
+          Affiliate Program FAQ
+        </h4>
+
+        <details
+          name="faq"
+          class="accor_item bg-[#F8F7FC] shadow-[2px_6px_40px_0px_#0000000A] rounded-xl mb-6"
+        >
+          <summary
+            class="py-6 px-10 list-none cursor-pointer text-xl font-medium text-[#131010] flex justify-between items-baseline"
+          >
+            Do I have to be a ScalaHosting customer in order to become an
+            affiliate?
+            <i class="fa-solid fa-angle-down flex text-[#9C9FA4]"></i>
+          </summary>
+          <p class="pb-6 px-10 text-[#45474B] text-[1.25rem] font-medium">
+            No, you don’t need to be a ScalaHosting customer to join their
+            affiliate program. Anyone can sign up and start earning commissions
+            by promoting ScalaHosting’s services.
+          </p>
+        </details>
+
+        <details
+          name="faq"
+          class="accor_item bg-[#F8F7FC] shadow-[2px_6px_40px_0px_#0000000A] rounded-xl mb-6"
+        >
+          <summary
+            class="py-6 px-10 list-none cursor-pointer text-xl font-medium text-[#131010] flex justify-between items-baseline"
+          >
+            How to make the most out of our partnership?
+            <i class="fa-solid fa-angle-down flex text-[#9C9FA4]"></i>
+          </summary>
+          <p class="pb-6 px-10 text-[#45474B] text-[1.25rem] font-medium">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            illum fugiat veniam consequuntur iusto, cum ut quidem neque, facere
+            consequatur repellat praesentium itaque asperiores atque id est
+            laboriosam unde suscipit!
+          </p>
+        </details>
+
+        <details
+          name="faq"
+          class="accor_item bg-[#F8F7FC] shadow-[2px_6px_40px_0px_#0000000A] rounded-xl mb-6"
+        >
+          <summary
+            class="py-6 px-10 list-none cursor-pointer text-xl font-medium text-[#131010] flex justify-between items-baseline"
+          >
+            What is the difference between our Affiliate and Referral Programs?
+            <i class="fa-solid fa-angle-down flex text-[#9C9FA4]"></i>
+          </summary>
+          <p class="pb-6 px-10 text-[#45474B] text-[1.25rem] font-medium">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            illum fugiat veniam consequuntur iusto, cum ut quidem neque, facere
+            consequatur repellat praesentium itaque asperiores atque id est
+            laboriosam unde suscipit!
+          </p>
+        </details>
+
+        <details
+          name="faq"
+          class="accor_item bg-[#F8F7FC] shadow-[2px_6px_40px_0px_#0000000A] rounded-xl mb-6"
+        >
+          <summary
+            class="py-6 px-10 list-none cursor-pointer text-xl font-medium text-[#131010] flex justify-between items-baseline"
+          >
+            How long does it take for a sale to show up in my account?
+            <i class="fa-solid fa-angle-down flex text-[#9C9FA4]"></i>
+          </summary>
+          <p class="pb-6 px-10 text-[#45474B] text-[1.25rem] font-medium">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            illum fugiat veniam consequuntur iusto, cum ut quidem neque, facere
+            consequatur repellat praesentium itaque asperiores atque id est
+            laboriosam unde suscipit!
+          </p>
+        </details>
+
+        <details
+          name="faq"
+          class="accor_item bg-[#F8F7FC] shadow-[2px_6px_40px_0px_#0000000A] rounded-xl mb-6"
+        >
+          <summary
+            class="py-6 px-10 list-none cursor-pointer text-xl font-medium text-[#131010] flex justify-between items-baseline"
+          >
+            I've made a sale. How and when will I be paid?
+            <i class="fa-solid fa-angle-down flex text-[#9C9FA4]"></i>
+          </summary>
+          <p class="pb-6 px-10 text-[#45474B] text-[1.25rem] font-medium">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            illum fugiat veniam consequuntur iusto, cum ut quidem neque, facere
+            consequatur repellat praesentium itaque asperiores atque id est
+            laboriosam unde suscipit!
+          </p>
+        </details>
+
+        <details
+          name="faq"
+          class="accor_item bg-[#F8F7FC] shadow-[2px_6px_40px_0px_#0000000A] rounded-xl mb-6"
+        >
+          <summary
+            class="py-6 px-10 list-none cursor-pointer text-xl font-medium text-[#131010] flex justify-between items-baseline"
+          >
+            What is the minimum payout amount for the affiliate program?
+            <i class="fa-solid fa-angle-down flex text-[#9C9FA4]"></i>
+          </summary>
+          <p class="pb-6 px-10 text-[#45474B] text-[1.25rem] font-medium">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            illum fugiat veniam consequuntur iusto, cum ut quidem neque, facere
+            consequatur repellat praesentium itaque asperiores atque id est
+            laboriosam unde suscipit!
+          </p>
+        </details>
+      </div>
+    </section>
+    <!-- FAQ End -->
+
+    <!-- Footer Start -->
+
+    <footer class="bg-[#00853C] py-16 max-md:py-8">
+      <div class="container">
+        <ul
+          class="flex gap-12 max-md:gap-6 justify-center flex-wrap mb-9 max-md:mb-5"
+        >
+          <li>
+            <a href="" class="text-white text-xl max-md:text-xs font-bold"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white text-xl max-md:text-xs font-bold"
+              >Editorial Policy</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white text-xl max-md:text-xs font-bold"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white text-xl max-md:text-xs font-bold"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <p
+          class="text-center text-white text-xl max-md:text-xs font-medium mb-12 max-md:mb-8"
+        >
+          Copyright © 2024 basketballinsiders.com All Rights Reserved.
+        </p>
+        <ul class="flex justify-center items-center gap-3">
+          <li>
+            <a
+              href=""
+              class="border border-white flex items-center justify-center w-12 h-12 rounded-full"
+              ><img class="w-5" src="./images/twit.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="border border-white flex items-center justify-center w-12 h-12 rounded-full"
+              ><img class="w-5" src="./images/facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="border border-white flex items-center justify-center w-12 h-12 rounded-full"
+              ><img class="w-5" src="./images/insta.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="border border-white flex items-center justify-center w-12 h-12 rounded-full"
+              ><img class="w-5" src="./images/pint.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="border border-white flex items-center justify-center w-12 h-12 rounded-full"
+              ><img class="w-5" src="./images/youtube.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
